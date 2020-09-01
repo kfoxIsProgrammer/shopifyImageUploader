@@ -81,7 +81,7 @@ v# shopifyImageUploader
 
 <p align="center">
   <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader">
-    <img src="images/example.PNG" alt="Logo" width="160" height="80">
+    <img src="images/example.PNG" alt="Demo" >
   </a>
 
 Here's a blank template to get started:
