@@ -1,0 +1,30 @@
+{
+  "name": "image-repo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.23.0",
+    "denque": "^1.4.1",
+    "express": "^4.17.1",
+    "fastpriorityqueue": "^0.6.3",
+    "fs": "0.0.1-security",
+    "jshint": "^2.12.0",
+    "mongoose": "^5.10.1",
+    "mongoose-auto-increment": "^5.0.1",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7",
+    "priorityqueuejs": "^2.0.0",
+    "query-string": "^6.13.1",
+    "request": "^2.88.2",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
