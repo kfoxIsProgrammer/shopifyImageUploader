@@ -25,12 +25,7 @@ v# shopifyImageUploader
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
@@ -67,7 +62,6 @@ v# shopifyImageUploader
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -84,7 +78,13 @@ v# shopifyImageUploader
     <img src="images/example.PNG" alt="Demo" >
   </a>
 
-Here is a picture of the index page for image uploads.
+Here is a picture of the index page for image uploads. 
+Process
+1. Select choose files and select any png or jpeg image.
+2. Click submit.
+3. The images are sent to my server and parsed using multer middleware
+4. The images are placed on the server locally and then sent to Cloudinary server for automatic img tags to be created.
+5. The img tags, local location and cloud location for each image is stored in a mongoDB database.
 
 
 
@@ -124,19 +124,14 @@ npm install
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/kfoxIsProgrammer/shopifyImageUploader/issues) for a list of proposed features (and known issues).
+
+This Project was my intial attempt at the Shopify Winter 2021 backend internship. I built the upload feature to my server.
+
 
 
 
