@@ -84,16 +84,17 @@ v# shopifyImageUploader
     <img src="images/example.PNG" alt="Demo" >
   </a>
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`kfoxIsProgrammer`, `shopifyImageUploader`, `twitter_handle`, `kevindafox@gmail.com`
+Here is a picture of the index page for image uploads.
+
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Node.js](https://nodejs.org/en/)
+* [Express](https://expressjs.com/)
+* [Amazon Web Services EC2](https://aws.amazon.com/)
+* [Cloudinary Cloud Services](https://cloudinary.com/?utm_source=google&utm_medium=cpc&utm_campaign=Abrand&utm_content=300754782437&utm_term=www.cloudinary.com&gclid=CjwKCAjw4rf6BRAvEiwAn2Q76iRSqb7Mp2R22tanV8uFNxx_DLw-9VUljk9SqH_QsXfg-m8OetMUehoCN4UQAvD_BwE)
+
 
 
 
