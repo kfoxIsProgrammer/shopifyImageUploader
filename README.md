@@ -1,5 +1,5 @@
 v# shopifyImageUploader
-This application is used as my project for the Winter 2021 backend internship at Shopify.
+
 
 <!--
 *** Thanks for checking out this README Template. If you have a suggestion that would
@@ -41,10 +41,10 @@ This application is used as my project for the Winter 2021 backend internship at
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">Shopify Image Uploader</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    This application is used as my project for the Winter 2021 backend internship at Shopify.
     <br />
     <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader"><strong>Explore the docs »</strong></a>
     <br />
