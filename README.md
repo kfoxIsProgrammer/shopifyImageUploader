@@ -58,11 +58,11 @@ v# shopifyImageUploader
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* [How to Use](#how-to-use)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+* [How to Use](#how-to-use)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -81,12 +81,6 @@ v# shopifyImageUploader
 
 Here is a picture of the index page for image uploads. <br />
 
-### How to use
-1. Select choose files and select any png or jpeg image.
-2. Click submit.
-3. The images are sent to my server and parsed using multer middleware
-4. The images are placed on the server locally and then sent to Cloudinary server for automatic img tags to be created.
-5. The img tags, local location and cloud location for each image is stored in a mongoDB database.
 
 
 
@@ -124,7 +118,12 @@ git clone https://github.com/kfoxIsProgrammer/shopifyImageUploader.git
 npm install
 ```
 
-
+### How to use
+1. Select choose files and select any png or jpeg image.
+2. Click submit.
+3. The images are sent to my server and parsed using multer middleware
+4. The images are placed on the server locally and then sent to Cloudinary server for automatic img tags to be created.
+5. The img tags, local location and cloud location for each image is stored in a mongoDB database.
 
 
 <!-- ROADMAP -->
