@@ -79,7 +79,10 @@ v# shopifyImageUploader
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<p align="center">
+  <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader">
+    <img src="images/example.png" alt="Logo" width="160" height="80">
+  </a>
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
