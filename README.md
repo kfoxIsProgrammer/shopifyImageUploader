@@ -58,6 +58,7 @@ v# shopifyImageUploader
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+* [How to Use](#how-to-use)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -78,8 +79,9 @@ v# shopifyImageUploader
     <img src="images/example.PNG" alt="Demo" >
   </a>
 
-Here is a picture of the index page for image uploads. 
-Process
+Here is a picture of the index page for image uploads. <br />
+
+### How to use
 1. Select choose files and select any png or jpeg image.
 2. Click submit.
 3. The images are sent to my server and parsed using multer middleware
