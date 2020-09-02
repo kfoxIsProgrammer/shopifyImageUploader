@@ -109,7 +109,7 @@ app.post("/api", csrfProtection, function (req, res) {
   });
 });
 
-//HTTPS Server setup with Postive
+//HTTPS Server setup with Postive SSL Certificate from Comodo
 https
   .createServer(
     {
