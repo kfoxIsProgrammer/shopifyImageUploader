@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 cloudinary.config({
   cloud_name: "kfox-image-repo",
   api_key: "798871349999877",
-  api_secret: "Redacted for my safety",
+  api_secret: "Ayt-UF-9wckPkgRsMPUk4fz0FDc",
 });
 
 //MongoDB string
