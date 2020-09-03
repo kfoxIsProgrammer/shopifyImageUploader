@@ -159,18 +159,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - kevindafox@gmail.com
+Kevin Fox - kevindafox@gmail.com
 
 Project Link: [https://github.com/kfoxIsProgrammer/shopifyImageUploader](https://github.com/kfoxIsProgrammer/shopifyImageUploader)
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
 
-* []()
-* []()
-* []()
 
 
 
