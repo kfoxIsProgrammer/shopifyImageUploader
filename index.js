@@ -69,10 +69,21 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'none'"],
-        scriptSrc: ["'self'", "stackpath.bootstrapcdn.com", "code.jquery.com/"],
-        styleSrc: ["'self'", "stackpath.bootstrapcdn.com"],
-        fontSrc: ["'self'", "stackpath.bootstrapcdn.com"],
-        imgSrc: ["'self'", "https:", "data:"],
+        scriptSrc: [
+          "'self'",
+          "assets",
+          "stackpath.bootstrapcdn.com",
+          "code.jquery.com",
+        ],
+        styleSrc: [
+          "'self'",
+          "fonts.googleapis.com",
+          "assets",
+          "stackpath.bootstrapcdn.com",
+        ],
+        fontSrc: ["'self'", "fonts.gstatic.com", "stackpath.bootstrapcdn.com"],
+        imgSrc: ["'self'", "https:", "http:", "data:"],
+        upgradeInsecureRequests: [],
       },
     },
   })
@@ -83,8 +94,15 @@ app.use(winstonConfig.logging);
 app.use(winstonConfig.errorlog);
 
 //Index page to upload photos
-app.get("/", csrfProtection, (req, res) => {
+app.get("/upload", csrfProtection, (req, res) => {
   res.render("view", { csrfToken: req.csrfToken() });
+});
+
+app.get("/", (req, res) => {
+  console.log("Getting images");
+  imageProcess.getRecentSevenImages(function (data) {
+    res.render("picture", { imageSource: data });
+  });
 });
 
 //Images are posted here to be processed by the server
@@ -105,7 +123,7 @@ app.post("/api", csrfProtection, function (req, res) {
       );
     }
     console.log("The files are sent down the pipe");
-    res.end("File is uploaded");
+    res.redirect("/");
   });
 });
 

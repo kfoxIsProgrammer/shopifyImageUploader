@@ -29,8 +29,9 @@ async function getImgTags(picture) {
   cloudinary.v2.uploader.upload(
     picture.localImagePath,
     {
+      eager: [{ width: 800, height: 533, crop: "crop" }],
       public_id: picture.imageName,
-      categorization: "google_tagging",
+      categorization: "aws_rek_tagging",
     },
     function (err, image) {
       console.log();
@@ -51,12 +52,16 @@ async function getImgTags(picture) {
 function buildImgForDB(picture, image) {
   console.log("Building Picture object");
 
+  console.log();
   //Get the tags from cloudinary and put them in object
-  var tags = image.info.categorization.google_tagging.data;
+  var tags = image.info.categorization.aws_rek_tagging.data;
   var tagmap = new Map();
 
-  for (var i = 0; i < tags.length; i++) {
-    tagmap.set(tags[i].tag, tags[i].confidence);
+  if (tags != undefined) {
+    for (var i = 0; i < tags.length; i++) {
+      tagmap.set(tags[i].tag, tags[i].confidence);
+    }
+    picture.ImgTags = tagmap;
   }
 
   //Adding Tags from cloudinary to the picture obj
@@ -86,3 +91,28 @@ function buildImgForDB(picture, image) {
     }
   });
 }
+
+module.exports.getRecentSevenImages = function (callback) {
+  //open mongodb connection for each picture
+  //This will need to be limited by some way in the future
+  mongoose.connect(mongoDB, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  });
+
+  return Picture.find()
+    .limit(7)
+    .sort({
+      _id: -1,
+    })
+    .exec(function (err, posts) {
+      if (err) {
+        console.log("Failed");
+      } else {
+        console.log("success");
+        callback(posts);
+      }
+    });
+};
