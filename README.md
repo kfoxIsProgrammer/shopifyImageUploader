@@ -1,4 +1,4 @@
-v# shopifyImageUploader
+
 
 
 <!--
@@ -41,10 +41,10 @@ v# shopifyImageUploader
   <p align="center">
     This application is used as my project for the Winter 2021 backend internship at Shopify.
     <br />
-    <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader"><strong>Explore the docs »</strong></a>
+   <a href="https://kfoxiscoolio.com/imageApp"><strong>View Demo</strong></a>
     <br />
     <br />
-    <a href="https://kfoxiscoolio.com">View Demo</a>
+    <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader">Explore the Docs</a>
     ·
     <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader/issues">Report Bug</a>
     ·
@@ -76,10 +76,11 @@ v# shopifyImageUploader
 
 <p align="center">
   <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader">
-    <img src="images/example.PNG" alt="Demo" >
+    <img src="images/example1.PNG" alt="Demo" >
   </a>
 
-Here is a picture of the index page for image uploads. <br />
+Here is a picture of the upload page for image uploads. <br />
+Uploading .png and .jpg are done here. <br />
 
 
 
@@ -119,11 +120,14 @@ npm install
 ```
 
 ### How to use
-1. Select choose files and select any png or jpeg image.
-2. Click submit.
-3. The images are sent to my server and parsed using multer middleware
-4. The images are placed on the server locally and then sent to Cloudinary server for automatic img tags to be created.
-5. The img tags, local location and cloud location for each image is stored in a mongoDB database.
+1. Go to Upload-images on the navbar.
+2. Select choose files and select any png or jpeg image.
+3. Click submit.
+4. The images are sent to my server and parsed using multer middleware
+5. The images are placed on the server locally and then sent to Cloudinary server for automatic img tags to be created.
+6. The img tags, local location and cloud location for each image is stored in a mongoDB database.
+7. The index page shows the most recent 7 images that have benn uploaded. 
+8. Refresh the page if your recent uploads are not showing (Uploads are done asychronously with the redirect).
 
 
 <!-- ROADMAP -->
@@ -159,18 +163,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - kevindafox@gmail.com
+Kevin Fox - kevindafox@gmail.com
 
 Project Link: [https://github.com/kfoxIsProgrammer/shopifyImageUploader](https://github.com/kfoxIsProgrammer/shopifyImageUploader)
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
 
-* []()
-* []()
-* []()
 
 
 
