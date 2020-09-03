@@ -120,11 +120,12 @@ npm install
 ```
 
 ### How to use
-1. Select choose files and select any png or jpeg image.
-2. Click submit.
-3. The images are sent to my server and parsed using multer middleware
-4. The images are placed on the server locally and then sent to Cloudinary server for automatic img tags to be created.
-5. The img tags, local location and cloud location for each image is stored in a mongoDB database.
+1. Go to Upload-images on the navbar
+2. Select choose files and select any png or jpeg image.
+3. Click submit.
+4. The images are sent to my server and parsed using multer middleware
+5. The images are placed on the server locally and then sent to Cloudinary server for automatic img tags to be created.
+6. The img tags, local location and cloud location for each image is stored in a mongoDB database.
 
 
 <!-- ROADMAP -->
