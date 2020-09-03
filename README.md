@@ -79,7 +79,8 @@
     <img src="images/example1.PNG" alt="Demo" >
   </a>
 
-Here is a picture of the index page for image uploads. <br />
+Here is a picture of the upload page for image uploads. <br />
+Uploading .png and .jpg are done here. <br />
 
 
 
