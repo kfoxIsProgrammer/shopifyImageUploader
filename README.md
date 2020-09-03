@@ -120,12 +120,14 @@ npm install
 ```
 
 ### How to use
-1. Go to Upload-images on the navbar
+1. Go to Upload-images on the navbar.
 2. Select choose files and select any png or jpeg image.
 3. Click submit.
 4. The images are sent to my server and parsed using multer middleware
 5. The images are placed on the server locally and then sent to Cloudinary server for automatic img tags to be created.
 6. The img tags, local location and cloud location for each image is stored in a mongoDB database.
+7. The index page shows the most recent 7 images that have benn uploaded. 
+8. Refresh the page if your recent uploads are not showing (Uploads are done asychronously with the redirect).
 
 
 <!-- ROADMAP -->
