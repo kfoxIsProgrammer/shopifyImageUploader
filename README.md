@@ -41,10 +41,10 @@
   <p align="center">
     This application is used as my project for the Winter 2021 backend internship at Shopify.
     <br />
-    <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader"><a href="https://kfoxiscoolio.com">View Demo</a><strong>View Demo»</strong></a>
     <br />
     <br />
-    <a href="https://kfoxiscoolio.com">View Demo</a>
+    <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader">Explore the Docs</a>
     ·
     <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader/issues">Report Bug</a>
     ·
