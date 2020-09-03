@@ -68,7 +68,9 @@ function buildImgForDB(picture, image) {
   //Add url for retrieval from cloudinary
 
   picture.ImgTags = tagmap;
-  picture.cloudImagePath = image.url;
+  var cloudUrl = image.url.replace(/^http:\/\//i, "https://");
+  console.log(cloudUrl);
+  picture.cloudImagePath = cloudUrl;
 
   //open mongodb connection for each picture
   //This will need to be limited by some way in the future

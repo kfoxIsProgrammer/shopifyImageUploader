@@ -83,22 +83,21 @@ app.use(
         ],
         fontSrc: ["'self'", "fonts.gstatic.com", "stackpath.bootstrapcdn.com"],
         imgSrc: ["'self'", "https:", "http:", "data:"],
-        upgradeInsecureRequests: [],
       },
     },
   })
 );
 
 //adding winston logging of requests
-app.use(winstonConfig.logging);
-app.use(winstonConfig.errorlog);
+//app.use(winstonConfig.logging);
+//app.use(winstonConfig.errorlog);
 
 //Index page to upload photos
-app.get("/upload", csrfProtection, (req, res) => {
+app.get("/imageApp/upload", csrfProtection, (req, res) => {
   res.render("view", { csrfToken: req.csrfToken() });
 });
 
-app.get("/", (req, res) => {
+app.get("/imageApp", (req, res) => {
   console.log("Getting images");
   imageProcess.getRecentSevenImages(function (data) {
     res.render("picture", { imageSource: data });
@@ -106,7 +105,7 @@ app.get("/", (req, res) => {
 });
 
 //Images are posted here to be processed by the server
-app.post("/api", csrfProtection, function (req, res) {
+app.post("/imageApp/api", csrfProtection, function (req, res) {
   upload(req, res, function (err) {
     console.log(req.files);
     if (err) {
@@ -123,7 +122,7 @@ app.post("/api", csrfProtection, function (req, res) {
       );
     }
     console.log("The files are sent down the pipe");
-    res.redirect("/");
+    res.redirect("/imageApp");
   });
 });
 
