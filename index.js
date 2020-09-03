@@ -83,6 +83,7 @@ app.use(
         ],
         fontSrc: ["'self'", "fonts.gstatic.com", "stackpath.bootstrapcdn.com"],
         imgSrc: ["'self'", "https:", "http:", "data:"],
+        upgradeInsecureRequests: [],
       },
     },
   })
