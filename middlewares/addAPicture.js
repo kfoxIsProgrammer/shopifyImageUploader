@@ -5,12 +5,12 @@ const mongoose = require("mongoose");
 //Configuration of cloudinary API
 cloudinary.config({
   cloud_name: "kfox-image-repo",
-  api_key: "798871349999877",
-  api_secret: "Ayt-UF-9wckPkgRsMPUk4fz0FDc",
+  api_key: "Redacting for my safety",
+  api_secret: "Redacting for my safety",
 });
 
 //MongoDB string
-var mongoDB = "mongodb://127.0.0.1/image-repo";
+var mongoDB = "Redacting for my safety";
 
 //Creates the picture object to be manipulated before create operation
 module.exports.startImgPreprocess = function (name, url, user, permission) {
