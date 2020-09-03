@@ -131,9 +131,9 @@ app.post("/api", csrfProtection, function (req, res) {
 https
   .createServer(
     {
-      key: fss.readFileSync("./ssl/PRIVATEKEYD.key"),
-      ca: fss.readFileSync("./ssl/CABUNDLE.ca-bundle"),
-      cert: fss.readFileSync("./ssl/kfoxiscoolio.crt"),
+      key: fss.readFileSync("Redacting for my safety"),
+      ca: fss.readFileSync("Redacting for my safety"),
+      cert: fss.readFileSync("Redacting for my safety"),
     },
     app
   )
