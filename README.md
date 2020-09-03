@@ -76,7 +76,7 @@
 
 <p align="center">
   <a href="https://github.com/kfoxIsProgrammer/shopifyImageUploader">
-    <img src="images/example.PNG" alt="Demo" >
+    <img src="images/example1.PNG" alt="Demo" >
   </a>
 
 Here is a picture of the index page for image uploads. <br />
