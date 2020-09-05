@@ -141,7 +141,7 @@ Potential improvement I want to make.
 1. Add dynamic image changing to prevent the user having to manually refresh.
 - Use MVC style or change front end with angular.
 
--This will solve the race condition between when images are uploaded and when they are viewable.
+- This will solve the race condition between when images are uploaded and when they are viewable.
 
 2. Find the best way to display images so they are not distorted
 
