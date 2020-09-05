@@ -145,6 +145,9 @@ Potential improvement I want to make.
 
 2. Find the best way to display images so they are not distorted
 
+3. Add user accounts for image ownership.
+- setup accounts with least privileges in mind.
+
 
 
 <!-- CONTRIBUTING -->
