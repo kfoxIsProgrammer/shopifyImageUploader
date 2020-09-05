@@ -136,7 +136,14 @@ npm install
 See the [open issues](https://github.com/kfoxIsProgrammer/shopifyImageUploader/issues) for a list of proposed features (and known issues).
 
 This Project was my intial attempt at the Shopify Winter 2021 backend internship. I built the upload feature to my server.
+Potential improvement I want to make.
 
+1. Add dynamic image changing to prevent the user having to manually refresh.
+- Use MVC style or change front end with angular.
+
+-This will solve the race condition between when images are uploaded and when they are viewable.
+
+2. Find the best way to display images so they are not distorted
 
 
 
